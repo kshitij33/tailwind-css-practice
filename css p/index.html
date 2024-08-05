@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .overlap-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: -100px;
+        height: 100vh;
+        z-index: 5;
+      }
+      .nav-btn {
+        z-index: 10;
+        position: relative;
+      }
+      .content-btn {
+        z-index: 20;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="flex justify-between items-center m-10 relative z-20">
+      <ul class="flex space-x-14 ml-14">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="flex-grow text-center">
+        <p class="text-3xl font-bold text-blue-900">Landing</p>
+      </div>
+      <div>
+        <button class="nav-btn bg-blue-900 text-white rounded-lg px-20 py-1">
+          Buy Now
+        </button>
+      </div>
+    </nav>
+    <div class="flex relative z-10 mb-72">
+      <div class="ml-56 mt-56">
+        <div class="text-5xl mb-4"><span>Introduce Your Product</span></div>
+        <div class="text-5xl mb-4"><span>Quickly and Effectively</span></div>
+        <div class="w-2/6">
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, optio.
+            Delectus perspiciatis explicabo ad veniam repellendus! Hic eos vitae
+            quae distinctio at quaerat, dolor consequuntur optio totam
+            blanditiis enim ut.
+          </span>
+          <br /><br />
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            nesciunt provident excepturi iure saepe? Illo sequi doloribus quam
+            impedit quia.
+          </span>
+        </div>
+        <br /><br />
+        <button
+          class="content-btn bg-blue-900 text-white rounded-lg px-20 py-1"
+        >
+          Purchase UI Kit
+        </button>
+        <button
+          class="content-btn text-blue-900 font-bold rounded-lg px-20 py-1 border-blue-900"
+        >
+          Learn More
+        </button>
+      </div>
+      <img class="overlap-image" src="designer_1.svg" alt="Designer Image" />
+    </div>
+    <div>
+      <br />
+      <hr class="h-4" />
+    </div>
+    <div class="mt-96 flex">
+      <div>
+        <p class="text-4xl">Light, Fast & Powerful</p>
+        <p class="w-2/6">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+          aliquam voluptatum sint nihil est hic ut soluta. Iure, iusto.
+          Repudiandae veniam illum quo fugiat quas fuga reprehenderit debitis
+          consequatur odit?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+          numquam!
+        </p>
+
+        <div>
+          <div class="flex">
+            <div>
+              <div><p>Title goes here</p></div>
+              <div>
+                <p class="w-2/4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, nostrum?
+                </p>
+              </div>
+            </div>
+            <div>
+              <div><p>Title goes here</p></div>
+              <div>
+                <p class="w-2/4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, nostrum?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div class="flex">
+        <div>
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div>
+        <img src="undraw_mobile_login_ikmv.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

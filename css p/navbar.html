@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style>
+        .overlap-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin-top: -100px;
+          height: 100vh;
+          z-index: 5;
+        }
+        .nav-btn {
+          z-index: 10;
+          position: relative;
+        }
+        .content-btn {
+          z-index: 20;
+          position: relative;
+        }
+      </style>
+</head>
+
+<body class="font-[Poppins] h-screen">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto z-20">
+            <div>
+                <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Solution</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Resource</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 nav-btn">
+                <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <div class="flex relative z-10 mb-72">
+        <div class="ml-56 mt-56">
+          <div class="text-5xl mb-4"><span>Introduce Your Product</span></div>
+          <div class="text-5xl mb-4"><span>Quickly and Effectively</span></div>
+          <div class="w-2/6">
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, optio.
+              Delectus perspiciatis explicabo ad veniam repellendus! Hic eos vitae
+              quae distinctio at quaerat, dolor consequuntur optio totam
+              blanditiis enim ut.
+            </span>
+            <br /><br />
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+              nesciunt provident excepturi iure saepe? Illo sequi doloribus quam
+              impedit quia.
+            </span>
+          </div>
+          <br /><br />
+          <button
+            class="content-btn bg-blue-900 text-white rounded-lg px-20 py-1"
+          >
+            Purchase UI Kit
+          </button>
+          <button
+            class="content-btn text-blue-900 font-bold rounded-lg px-20 py-1 border-blue-900"
+          >
+            Learn More
+          </button>
+        </div>
+        <!-- <img class="overlap-image" src="designer_1.svg" alt="Designer Image" /> -->
+      </div>
+      <div>
+        <br />
+        <hr class="h-4" />
+      </div>
+      <div class="mt-96 flex">
+        <div>
+          <p class="text-4xl">Light, Fast & Powerful</p>
+          <p class="w-2/6">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            aliquam voluptatum sint nihil est hic ut soluta. Iure, iusto.
+            Repudiandae veniam illum quo fugiat quas fuga reprehenderit debitis
+            consequatur odit?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+            numquam!
+          </p>
+  
+          <div>
+            <div class="flex">
+              <div>
+                <div><p>Title goes here</p></div>
+                <div>
+                  <p class="w-2/4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, nostrum?
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div><p>Title goes here</p></div>
+                <div>
+                  <p class="w-2/4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, nostrum?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div class="flex">
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div>
+          <img src="undraw_mobile_login_ikmv.svg" alt="" />
+        </div>
+      </div>
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>
